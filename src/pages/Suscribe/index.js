@@ -54,7 +54,7 @@ function Suscribe() {
             display: showSuscribe ? "flex" : "none",
           }}
         >
-          <h2 className="card__title">Subscribe</h2>
+          <h2 className="card__title">Suscríbete</h2>
           <p className="card__content">
             Recibe las ofertas y carteleras semanales sin ningún esfuerzo!!
           </p>
