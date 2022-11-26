@@ -17,10 +17,10 @@ import { useNavigate } from "react-router-dom/dist";
 
 const styles = {
   icon_input: {
-    fontSize: "18px!important",
+    fontSize: "16px!important",
   },
   email_valid: {
-    fontSize: "18px!important",
+    fontSize: "16px!important",
     color: `#1EDEA2 !important`,
   },
 };
@@ -42,14 +42,15 @@ function RegisterForm() {
         left: "0px",
         width: "100%",
         height: "100%",
+        paddingTop: '20px',
         overflow: "hidden",
       }}
     >
       <video
         src="https://media.istockphoto.com/id/1321349856/es/v%C3%ADdeo/mujeres-alegres-divirti%C3%A9ndose-en-el-cine-chicas-alegres-riendo-en-el-cine.mp4?s=mp4-640x640-is&k=20&c=D8HXD1APXLSLqS7gmAzoHcbZqh-Lbm_Mj8ZPGXNSIwg="
-        autoplay="true"
-        muted="true"
-        loop="true"
+        autoPlay={true}
+        muted={true}
+        loop={true}
         poster="https://carontestudio.com/img/contacto.jpg"
         style={{
           position: 'absolute',
@@ -73,10 +74,10 @@ function RegisterForm() {
       >
         <Stack
           width={450}
-          spacing={5}
+          spacing={3}
           sx={{
             backgroundColor: "#FFF",
-            padding: "32px",
+            padding: "24px",
             borderRadius: "10px",
             boxShadow: "1px 6px 33px " + theme.palette.error.main,
             zIndex: '4',
