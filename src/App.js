@@ -25,7 +25,6 @@ function App() {
         <Stack width={450} spacing={3}>
           <Button onClick={() => navigate('/register-form')} text='Formulario de Registro' />
           <Button onClick={() => navigate('/suscribe')} text='Registro al boletín semanal' />
-          <Button text='Registro al Grupo de amigos' />
           <Button onClick={() => navigate('/landing')} text='Landing de grupo de Amigos' />
         </Stack>
       </Stack>
