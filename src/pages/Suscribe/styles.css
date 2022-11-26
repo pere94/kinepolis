@@ -1,0 +1,76 @@
+.loader {
+  animation: up-down6 1.5s ease-in infinite alternate;
+}
+
+@keyframes up-down6 {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.card {
+  width: 300px;
+  height: 254px;
+  padding: 32px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 1px 6px 33px #FF4F2E;
+}
+
+.card > * {
+  margin: 0;
+}
+
+.card__title {
+  color: #333;
+  font-size: 35px;
+}
+
+.card__content {
+  font-size: 16px;
+  line-height: 18px;
+  color: #333;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card__form input {
+  margin-top: 10px;
+  outline: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: transparent 0px 0px 0px 1px inset;
+  padding: 0.6em;
+  border-radius: 14px;
+  border: 1px solid #333;
+  color: black;
+}
+
+.card__form button {
+  border: 0;
+  background: #FF4F2E;
+  color: #fff;
+  padding: 0.68em;
+  border-radius: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sign-up:hover {
+  opacity: 0.8;
+} 

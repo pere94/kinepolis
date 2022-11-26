@@ -1,13 +1,28 @@
 import React from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import RegisterForm from './pages/RegisterForm';
+import Landing from './pages/Landing';
+import Suscribe from './pages/Suscribe';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+        <Routes>
+          <Route index element={<App />} />
+          <Route exact path="register-form" element={<RegisterForm />} />
+          <Route exact path="landing" element={<Landing />} />
+          <Route exact path="suscribe" element={<Suscribe />} />
+        </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
