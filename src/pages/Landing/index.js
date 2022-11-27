@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import { NavBar } from "../../components/NavBar";
 import background from "../../img/5230711_2650149.png";
+import kineploisPlus from "../../img/kineplois +.jpg";
 import camara from "../../img/camara.png";
 import Diversity3Icon from "@mui/icons-material/Diversity3";
 import { ButtonContained } from "../../components/OthersButton/ButtonContained";
@@ -88,21 +89,20 @@ function Landing() {
             fontWeight={700}
             fontSize={45}
           >
-            Descubre todas las ventajas de formar parte de nuestro Grupo de
-            Amigos
+            En Kinépolis siempre tenemos más para nuestros amigos.
           </Typography>
           <Typography
             width={"100%"}
             variant="h3"
             align="left"
             fontWeight={400}
-            fontSize={23}
+            fontSize={20}
             color="#616161"
             lineHeight="40px"
           >
-            Para nuestros amigos, reservamos siempre lo mejor: invitaciones
-            a premières exclusivas y preestrenos, fantásticas promociones
-            y además... ¡en tu cumple te regalamos una entrada de cine!
+            Descubre todas las ventajas de ser parte de nuestro grupo de amigos. En Kinépolis nos gusta que experimentes siempre más, es por eso que formando parte de nuestro Club de amigos tendrás beneficios exclusivos todos los meses: Entradas a preestrenos y premieres, promociones y una invitación especial para encontrarnos en tu cumple.
+            <br/>
+            Es gratis y solo debes completar el siguiente formulario 
           </Typography>
           <ButtonContained
             className="loaderx"
@@ -110,14 +110,13 @@ function Landing() {
             backgroundColor={theme.palette.error}
             variant="contained"
           >
-            Ir al Formulario
+            Seamos amigos
           </ButtonContained>
         </Stack>
         <Stack
           justifyContent="center"
           alignItems="center"
           sx={{
-            // background: 'rgba(0,0,0,0.3)',
             width: "40%",
             height: "800px",
           }}
@@ -145,13 +144,14 @@ function Landing() {
           sx={{
             position: "relative",
             zIndex: "6",
-            top: "-90px",
+            top: "-50px",
             gap: "32px",
           }}
         >
           <Card
-            title="¡En tu cumple, te invitamos al cine!"
-            description="Te regalamos una entrada* para que vengas de lunes a viernes no festivos durante una semana a partir de la fecha de tu cumpleaños (incluído). ¡Queremos ser de los primeros en felicitarte!"
+            title="¡Te queremos ver festejar!"
+            description="En tu cumple te regalamos una entrada* para que vengas a disfrutar de una salida con los que más quieres."
+            desc_secondary='*revisa las  bases y condiciones en nuestra web.'
             image="https://img.freepik.com/foto-gratis/foto-horizontal-hombre-cumpleanos-conmocionado-protagoniza-ojos-saltones-contiene-respiracion-contiene-globos-inflados-tarjeta-credito-no-esperaba-obtener-dinero-cuenta-bancaria-vestido-traje-negro-formal-que-posa-interior_273609-59052.jpg?w=996&t=st=1669483126~exp=1669483726~hmac=449044f714eefa617dac5260143663290a630f8ba3c15144dc837eefaded2356"
             tooltipText="*Para las películas en 4DX y ScreenX deberá pagarse el suplemento correspondiente, consultar Tarifas."
           />
@@ -166,8 +166,8 @@ function Landing() {
             image="https://img.freepik.com/vector-gratis/cubo-palomitas-maiz-realista_1284-11409.jpg?w=740&t=st=1669484250~exp=1669484850~hmac=143cb9afcc5a9524f7c8d1af47cc6acf6a27129bb0e998d302b81ea5e7b3aa46"
           />
           <Card
-            title="Descuento exclusivo en las mejores películas"
-            description="¡Ahora o nunca! Disfruta de un descuento exclusivo en las mejores películas justo antes de que salgan de cartelera. "
+            title="Más descuentos para que no te pierdas ¡nada!"
+            description="Disfruta de descuentos exclusivos en las mejores películas antes de que salgan de cartelera."
             image="https://img.freepik.com/vector-gratis/proximamente-escenario-iluminado-foco-luz_157027-1071.jpg?w=1380&t=st=1669484431~exp=1669485031~hmac=2affa51713edf0342f3cb679df3c7d805539656bcbae98fd55f9347029b7454a"
           />
           <Card
@@ -184,6 +184,11 @@ function Landing() {
             title="Descuentos para The Magic Forest"
             description="Ven con los peques al parque de ocio infantil más espectacular a un precio muy especial. (Kinépolis Ciudad de la Imagen) Celebra un cumple mágico o déjales jugando."
             image="https://magicforest.kinepolis.es/sites/default/files/styles/gallery_large/public/the_magic_forest_1.jpg?itok=wojVvPOJ"
+          />
+          <Card
+            title="Más oferta cultural, siempre"
+            description="Consigue entradas para las mejores obras de teatro, conciertos y eventos presenciales que se convertirán en experiencias únicas."
+            image='https://www.valenciaconventionbureau.com/sites/default/files/styles/gallery_default/public/crm-images/GALERIA_Kinepolis%20Business%20Ideas%20_kinepolis.png?itok=qMxtmDoN'
           />
         </Stack>
 
@@ -214,7 +219,7 @@ function Landing() {
             sx={{
               width: "100%",
               height: "100%",
-              backgroundColor: "rgba(0,0,0,0.5)",
+              backgroundColor: "rgba(0,0,0,0.7)",
               display: "flex",
               position: "relative",
               justifyContent: "center",
@@ -236,17 +241,19 @@ function Landing() {
                 fontWeight={700}
                 sx={{ textDecoration: "underline" }}
               >
-                ¡Ahora o nunca!
+                Para nuestros amigos, siempre hay más
               </Typography>
               <Typography
                 align="center"
-                fontSize={22}
+                fontSize={20}
                 color="#FFF"
                 fontWeight={700}
               >
-                Regalo de bienvenida: 50% de descuento en cualquiera de tus
-                compras en nuestras tiendas de Food & Beverage (gasto mínimo
-                10€).
+                Regístrate en pocos pasos y sé parte de nuestro club de amigos, es ¡Gratis!
+                <br/>
+                <br/>
+                Te preparamos un regalo de bienvenida: Regalo de bienvenida: 50% de descuento en cualquiera de tus compras en nuestras tiendas de Food & Beverage (gasto mínimo 10€).
+
               </Typography>
             </Stack>
             <Stack

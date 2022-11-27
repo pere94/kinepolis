@@ -1,10 +1,8 @@
 import { Stack, Tooltip, Typography } from "@mui/material";
 import React from "react";
-import { ButtonContained } from "../OthersButton/ButtonContained";
-import theme from "../../theme";
 import "./styles.css";
 
-function Card({ title, description, buttonText, image, tooltipText }) {
+function Card({ title, description, buttonText, image, tooltipText, desc_secondary }) {
   return (
     <Stack
       alignItems="flex-start"
@@ -67,7 +65,11 @@ function Card({ title, description, buttonText, image, tooltipText }) {
               </Typography>
             }
           >
-            <span>{description}</span>
+            <span>
+              {description}
+              <br/>
+              <span style={{fontSize: '15px !important'}}>{desc_secondary}</span>
+            </span>
           </Tooltip>
         </Typography>}
         {!tooltipText && <Typography
@@ -80,6 +82,8 @@ function Card({ title, description, buttonText, image, tooltipText }) {
           lineHeight="25px"
         >
           {description}
+          <br/>
+          <span style={{fontSize: '15px !important'}}>{desc_secondary}</span>
         </Typography>}
 
       </Stack>
